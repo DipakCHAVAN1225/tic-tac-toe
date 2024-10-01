@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color:chartreuse;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 8vw;
+  }
+  
+  h2 {
+    font-size: 10vw;
+  }
+  
+  .main {
+    width: 90%;
+  }
+  
+  button {
+    font-size: 8vw;
+    height: 15vw;
+    width: 15vw;
+    margin: 5px;
+  }
+  
+  #new-game {
+    font-size: 5vw;
+    height: 10vw;
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 10vw;
+  }
+  
+  h2 {
+    font-size: 12vw;
+  }
+  
+  .main {
+    width: 95%;
+  }
+  
+  button {
+    font-size: 10vw;
+    height: 20vw;
+    width: 20vw;
+    margin: 3px;
+  }
+  
+  #new-game {
+    font-size: 6vw;
+    height: 12vw;
+    width: 40vw;
+  }
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  text-align: center;
+  font-size: 5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+h2{
+  font-size: 7vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.main{
+  max-width: 650px;
+  width: 40%;
+  margin: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+button{
+  font-size: 5vw;
+  text-align: center;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 30px;
+  margin: 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border: none;
+}
+#new-game{
+  font-size: 30px;
+  text-align: center;
+  padding: 1vw;
+  height: 5vw;
+  width: 16vw;
+  font-weight: 600;
+  background-color: rgba(128, 255, 0, 0.421);
+  border-radius: 10px;
+  color: #fff;
+  margin: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation:Game 2s linear 1s infinite alternate;
+  -webkit-animation:Game .4s linear  infinite;
+  /* display: none; */
+  opacity: 0;
+}
+
+@keyframes Game {
+   0%{
+
+   border-top:4px solid grey;
+   border-right: 4px solid yellow;
+   border-bottom: 4px solid  red;
+   border-left: 4px solid  teal;
+
+  }
+  25%{
+    border-top: 4px solid  teal;
+    border-right: 4px solid grey;
+   border-bottom: 4px solid yellow;
+   border-left: 4px solid  red;
+  
+    
+  }
+  50%{
+    border-top:4px solid red;
+    border-right:4px solid teal;
+    border-bottom: 4px solid grey;
+    border-left: 4px solid  yellow;
+    
+    
+  }
+  100%{
+    border-top:4px solid yellow;
+    border-right: 4px solid red;
+    border-bottom: 4px solid  teal;
+    border-left: 4px solid  grey;
+  }
+  
+}
